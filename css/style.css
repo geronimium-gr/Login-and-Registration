@@ -1,0 +1,167 @@
+:root {
+    /* Color Palette */
+    --color1: #232946; /* Space Cadet */
+    --color2: #b8c1ec; /* Lavender Blue */
+    --color3: #eebbc3; /* Cameo Pink */
+    --color4: #fffffe; /* White */
+    --color5: #121629; /* Oxford Blue */
+
+    /* Font Style */
+    --font1: 'Voces';
+    --font2: 'Nunito';
+}
+
+/* For Selection */
+::-moz-selection {  /* Code for Firefox */
+    color: var(--color1);
+    background: var(--color3);
+}
+
+::selection {
+    color: var(--color1);
+    background: var(--color3);
+}
+
+/* Some Attribute Color Manipulation */
+body {
+    background-color: var(--color1);
+}
+
+p {
+    color: var(--color2);
+    font-family: var(--font2);
+}
+
+h2 {
+    color: var(--color4);
+    font-family: var(--font1);
+    font-weight: 700;
+}
+
+label {
+    color: var(--color2);
+}
+
+a {
+    color: var(--color3);
+}
+
+a:hover {
+    color: #ff8f9f;
+}
+
+span {
+    background-color: var(--color3)!important;
+}
+
+/* Header */
+.header {
+    border-radius: 0px;
+    background-color: var(--color3);
+}
+
+/* Logo */
+.logo {
+    height: 70px;
+    width: 210px;
+}
+
+/* Subheading under the Logo */
+.subheading {
+    color: var(--color5);
+    font-weight: 600;
+}
+
+/* Header including the Login Inputs */
+#home {
+    text-align: center;
+    padding: 17px;
+}
+
+/* Email and Password */
+#yourCred {
+    width: 350px;
+    margin: 2px;
+}
+
+/* When Textbox is in focus via Mouse or Keyboard */
+.btn_cred:focus {
+    border-color: var(--color1);
+    box-shadow: 0px 1px 1px rgba(199, 77, 77, 0.075) inset, 0px 0px 5px var(--color1);
+}
+
+/* When Textbox is in focus via Mouse or Keyboard */
+.btn_signup:focus {
+    border-color: var(--color3);
+    box-shadow: 0px 1px 1px rgba(199, 77, 77, 0.075) inset, 0px 0px 4px var(--color3);
+}
+
+/* Login  Button */
+.login_btn {
+    font-weight: 600;
+    background-color: var(--color1);
+    color: var(--color4);
+}
+
+/* Login Button when hovered */
+.login_btn:hover {
+    color: var(--color4);
+    background: linear-gradient(#36406e,#3a457a);
+}
+
+/* Gender Symbol and Design */
+.gender_margin_right {
+    margin-right: 10px;
+}
+
+.gender_padding {
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+/* Aliggnment in Radio Buttons */
+.gender_align {
+    align-items: center;
+}
+
+/* This is the checked state of Radio Button */
+.custom-radio .custom-control-input:checked~.custom-control-label::before,
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-color: #3a457a;
+    border-radius: 50%;
+}
+
+/* active state i.e. displayed while the mouse is being pressed down */
+/* .custom-radio .custom-control-input:active ~ .custom-control-label::before {
+    color: #fff;
+} */
+    
+/* the shadow; displayed while the element is in focus */
+.custom-radio .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 1px var(--color4), 0 0 0 0.2rem rgba(255, 123, 255, 0.25); /* pink, 25% opacity */
+}
+
+/* Signup Button */
+.signup_btn {
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid #fca0ae;
+    border-radius: 3px;
+    width: 170px;
+    outline: none;
+    background: linear-gradient(#eebbc3,#f39eab,#c77e8a);
+    color: var(--color5);
+}
+
+/* Signup Button when hovered*/
+.signup_btn:hover {
+    background: linear-gradient(#e6a7b0,#f39eab);
+}
+
+/* Quote */
+.blockquote-footer {
+    color: var(--color2);
+}
+
+  
+  
